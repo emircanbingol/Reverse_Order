@@ -1,0 +1,25 @@
+r = str(input("Please write what you want = "))
+r = r + " "
+d = list()
+for i in range(len(r)):
+    if r[i] == " ":
+        d.append(r[0:i+1])
+
+e = d[-1]
+e = e
+f = 0
+l = list()
+
+for i in range(len(e)):
+    if e[i] == " ":
+        l.append(e[f:i+1])
+        f = 1
+        f += i
+
+heyoo = ""
+
+for w in range(1,len(l)+1):
+    heyoo += l[-w]
+print(heyoo)
+
+# Very first, I converted the words that I wrote to list called d, and this list's last element is what I want to get its reverse. So I needed to also convert them to a list called l. Now I can easily write this list from reverse.
